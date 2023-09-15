@@ -1,12 +1,14 @@
-def factorial(x):
-    """This is a recursive function
-    to find the factorial of an integer"""
-
-    if x == 1:
-        return 1
-    else:
-        return (x * factorial(x-1))
-
-
-num = 3
-print("The factorial of", num, "is", factorial(num))
+class player:
+  def play(self):
+    print("the player is playing circket.")
+class Batsman(player):
+  def play(self):
+    print(" the batsman is batting.")
+class Bowler(player):
+  def play(self):
+    print("the bowler is bowling")
+batsman=Batsman()
+bowler=Bowler()
+batsman.play()
+bowler.play()
+    
